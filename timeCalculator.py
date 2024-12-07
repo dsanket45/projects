@@ -1,6 +1,7 @@
+import math
 TotalTime=0
 day=0
-import math
+end_time=float(input("Enter logout Timings : "))
 while True:
     user_input=input("Enter start time (or type 'q' for exit) :")
     if user_input.lower()=='q':
@@ -11,7 +12,6 @@ while True:
     except ValueError:
         print("Invalid input : Please enter valid number or 'q' for exit")
         continue
-    end_time=float(11.00)
     total_time=round((end_time-start_time)-0.40,2)
     if  0.59 <=total_time - int(total_time):
         total = total_time + 0.4 
